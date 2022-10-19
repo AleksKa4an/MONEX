@@ -75,7 +75,7 @@ img {
 .btn {
 	display: inline-block;
 	padding: 16px 70px;
-	font: 600 30px/1.48 'Roboto', sans-serif;
+	font: 600 17px/1.48 'Roboto', sans-serif;
 	border: 2px solid transparent;
 	cursor: pointer;
 	color: #312c21;
@@ -107,10 +107,18 @@ img {
 	position: relative;
 }
 
+#header .container {
+	position: relative;
+}
+
 .nav-contacts {
 	color: #fff;
 	font-weight: 500;
 	font-size: 13px;
+}
+
+.logo {
+	height: 49px;
 }
 
 .nav-contacts span {
@@ -120,6 +128,7 @@ img {
 
 .nav-info {
 	min-width: 100%;
+	margin-top: 15px;
 }
 
 .nav-contacts .nav-contacts-item + .nav-contacts-item {
@@ -133,8 +142,20 @@ img {
 }
 
 .nav-main {
+	padding: inherit;
+	min-width: 100%;
 	position: absolute;
-	background-color: rgba(255, 197, 1, 1);
+	background-color: transparent;
 	height: 100px;
 	top: 80px;
+	right: 0;
+}
+
+.nav-main-inner {
+	background-color: rgba(255, 197, 1, 1);
+	height: 100%;
+}
+
+.nav-main-item {
+	text-transform: uppercase;
 }
