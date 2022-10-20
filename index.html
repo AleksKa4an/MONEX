@@ -7,11 +7,30 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>MONEX</title>
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600ж700&display=swap" rel="stylesheet" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&family=Roboto:wght@300;400;500;600;700&display=swap"
+		rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/simple-adaptive-slider.css">
+	<script defer src="js/simple-adaptive-slider.min.js"></script>
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			// инициализация слайдера
+			const slider = new ItcSimpleSlider('.itcss');
+			// назначим обработчик при нажатии на кнопку .btn-prev
+			document.querySelector('.btn-prev').onclick = () => {
+				// перейдём к предыдущему слайду
+				slider.prev();
+			}
+			// назначим обработчик при нажатии на кнопку .btn-next
+			document.querySelector('.btn-next').onclick = () => {
+				// перейдём к следующему слайду
+				slider.next();
+			}
+		});
+	</script>
 </head>
 
 <body>
@@ -60,7 +79,36 @@
 		<!-- /.container -->
 	</header>
 	<!-- /#header -->
-	<main id="main"></main>
+	<main id="main">
+		<div class="main-intro d-flex align-items-center">
+			<div class="itcss">
+				<div class="itcss__wrapper">
+					<div class="itcss__items">
+						<div class="itcss__item">
+							<h1 class="intro-title text-uppercase">Продажа поддонов Б/У в Москве</h1>
+							<span class="intro-text">Доставка осуществляется круглосуточно,
+								в любое удобное время</span>
+							<a href="#" class="btn">Подробнее</a>
+						</div>
+						<div class="itcss__item">
+							<h1 class="intro-title text-uppercase">Продажа поддонов Б/У в Краснодаре</h1>
+							<span class="intro-text">Доставка осуществляется круглосуточно,
+								в любое удобное время</span>
+							<a href="#" class="btn">Подробнее</a>
+						</div>
+						<div class="itcss__item">
+							<h1 class="intro-title text-uppercase">Продажа поддонов Б/У в Ростове</h1>
+							<span class="intro-text">Доставка осуществляется ежедневно с 8.00 до 20.00</span>
+							<a href="#" class="btn">Подробнее</a>
+						</div>
+					</div>
+				</div>
+				<a class="itcss__btn itcss__btn_prev" href="#" role="button" data-slide="prev"></a>
+				<a class="itcss__btn itcss__btn_next" href="#" role="button" data-slide="next"></a>
+			</div>
+		</div>
+		<!-- /.main-intro -->
+	</main>
 	<!-- /#main -->
 </body>
 

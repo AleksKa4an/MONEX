@@ -1,0 +1,136 @@
+/* стили для корневого элемента слайдера */
+.itcss {
+	position: relative;
+	max-width: 1150px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/* стили для wrapper */
+.itcss__wrapper {
+	position: relative;
+	padding: 60px 0 60px 80px;
+	overflow: hidden;
+	background-color: rgba(1, 1, 0, 0.54);
+}
+
+/* стили для элемента, в котором непосредственно расположены элементы (слайды) */
+.itcss__items {
+	display: flex;
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+	transition: transform 0.5s ease;
+	will-change: transform;
+	counter-reset: slide;
+}
+
+/* стили для элементов */
+.itcss__item {
+	position: relative;
+	flex: 0 0 100%;
+	max-width: 100%;
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+	will-change: transform;
+	counter-increment: slide;
+}
+
+/* .itcss__item > div::before {
+	content: counter(slide);
+	position: absolute;
+	top: 10px;
+	right: 20px;
+} */
+
+/* кнопки Prev и Next */
+.itcss__btn {
+	position: absolute;
+	top: 50%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 2rem;
+	height: 4rem;
+	color: #fff;
+	/* background: rgb(0 0 0 / 10%); */
+	border: none;
+	outline: none;
+	transform: translateY(-50%);
+	cursor: pointer;
+	user-select: none;
+}
+
+.itcss__btn_hide {
+	display: none;
+}
+
+.itcss__btn:hover,
+.itcss__btn:focus {
+	color: #fff;
+	text-decoration: none;
+	border: none;
+	opacity: 0.7;
+}
+
+.itcss__btn_prev {
+	left: -125px;
+}
+
+.itcss__btn_next {
+	right: -125px;
+}
+
+.itcss__btn::before {
+	content: '';
+	display: inline-block;
+	width: 2rem;
+	height: 60px;
+	background: transparent no-repeat center center;
+	background-size: 100% 100%;
+}
+
+.itcss__btn_prev::before {
+	background-image: url(../img/left.svg);
+}
+
+.itcss__btn_next::before {
+	background-image: url(../img/right.svg);
+}
+
+/* Индикаторы */
+.itcss__indicators {
+	position: absolute;
+	right: 0;
+	bottom: -105px;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	margin: 0 15%;
+	padding-left: 0;
+	list-style: none;
+	user-select: none;
+	color: #fff;
+}
+
+.itcss__indicator {
+	flex: 0 1 auto;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: #fff;
+	background-clip: padding-box;
+	cursor: pointer;
+}
+
+.itcss__indicator + .itcss__indicator {
+	margin-left: 30px;
+}
+
+.itcss__indicator_active {
+	background-color: #ffc501;
+}
+
+/* класс для отключения transition */
+.transition-none {
+	transition: none;
+}
