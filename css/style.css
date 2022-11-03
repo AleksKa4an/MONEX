@@ -96,6 +96,10 @@ img {
 	position: relative;
 }
 
+#main {
+	width: 100%;
+}
+
 .nav-contacts {
 	color: #fff;
 	font-weight: 500;
@@ -280,4 +284,150 @@ img {
 	font-size: 25px;
 	font-weight: 500;
 	line-height: 29.3px;
+}
+
+/* About us section */
+
+.about-us-wraper {
+	width: 100%;
+	margin-top: 115px;
+	background-color: #ffc501;
+}
+
+.about-us-title {
+	margin-top: 95px;
+	background-color: #fff;
+	align-self: flex-start;
+}
+
+.about-us-title-text {
+	padding: 20px 65px;
+	font-family: 'Oswald', sans-serif;
+	font-size: 37px;
+	font-weight: 400;
+	line-height: 54.83px;
+}
+
+.about-us-items {
+	margin-top: 85px;
+	margin-bottom: 150px;
+}
+
+.about-us-item {
+	height: 240px;
+	width: 240px;
+	background-color: #fff;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.about-us-list {
+	display: block;
+	padding: 0 40px;
+}
+
+.about-us-list-item1 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 27px;
+	font-weight: 500;
+	line-height: 32px;
+}
+
+.about-us-list-item2 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 34px;
+	font-weight: 600;
+	line-height: 50px;
+	color: #ffc501;
+}
+
+.about-us-list-item3 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 21px;
+}
+
+.about-us-item-bg1 {
+	background-image: url(../img/About-us1.png);
+}
+
+.about-us-item-bg2 {
+	background-image: url(../img/About-us2.png);
+}
+
+.about-us-item-bg3 {
+	background-image: url(../img/About-us3.png);
+}
+
+.about-us-item-bg4 {
+	background-image: url(../img/About-us4.png);
+}
+
+.about-us-item-bg5 {
+	background-image: url(../img/About-us5.png);
+}
+
+/* Benefits */
+
+.benefit-wraper {
+}
+
+.benefit-title {
+	margin-top: 115px;
+	background-color: #ffc501;
+	align-self: flex-start;
+}
+
+.benefit-title-text {
+	padding: 20px 65px;
+	font-family: 'Oswald', sans-serif;
+	font-size: 37px;
+	font-weight: 400;
+	line-height: 54.83px;
+}
+
+.benefit-items {
+	margin-top: 90px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-row-gap: 35px;
+}
+
+.benefit-item {
+	border: 1px solid #312c21;
+	height: 235px;
+	width: 320px;
+}
+
+.benefit-list {
+	display: block;
+	padding: 25px;
+}
+
+.benefit-list-item1 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 52px;
+	font-weight: 600;
+	line-height: 77px;
+	color: #fff;
+	-webkit-text-stroke-color: black;
+	-webkit-text-stroke-width: 1px;
+}
+
+.benefit-list-item2 {
+	margin-top: 5px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 19px;
+	font-weight: 700;
+	line-height: 22px;
+	color: #ffc501;
+}
+
+.benefit-list-item3 {
+	margin-top: 10px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 19px;
 }
