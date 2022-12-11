@@ -1,0 +1,45 @@
+#header {
+	width: 100%;
+	/* padding: 0 15px; */
+	height: 130px;
+	background-color: #413a35;
+	position: relative;
+}
+
+#Contacts {
+	color: #fff;
+	font-weight: 500;
+	font-size: 13px;
+}
+
+#Contacts .large {
+	font-size: 27px;
+	font-weight: 600;
+}
+
+#nav-main {
+	padding: 30px 0;
+	background-color: rgba(255, 197, 1, 1);
+}
+
+#nav-main a {
+	padding: 0 20px;
+	color: #312c21;
+	font: 400 18px 'Roboto', sans-serif;
+    border-left: 1px solid rgba(65, 58, 53, 1);
+}
+
+#nav-main li:first-of-type>a {
+    border-left: none;
+}
+
+.container-xxl {
+	height: 150vh;
+}
+
+@media(max-width:990px) {
+	#nav-main a {
+    border-left: none;
+	padding-top: 1rem;
+}
+}

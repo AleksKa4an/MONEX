@@ -18,43 +18,62 @@
 
 	<body>
 		<header id="header">
-			<div class="container d-flex">
-				<nav class="nav-info d-flex align-items-center justify-content-between">
-					<a href="#" class="logo">
-						<img src="img/logo.png" alt="logo">
-					</a>
-					<nav class="nav-contacts d-flex ">
-						<div class="nav-contacts-item d-flex align-items-center">
-							<img src="img/nav.svg" alt="nav-item-img">
-							<span>ООО СТРОЙБРИГ ИНН: 7720484439</span>
-						</div>
-						<div class="nav-contacts-item d-flex align-items-center">
-							<img src="img/time.svg" alt="nav-item-img">
-							<span>Пн-Вс с 9:00 до 20:00</span>
-						</div>
-						<div class="nav-contacts-item d-flex align-items-center">
-							<img src="img/mail.svg" alt="nav-item-img">
-							<span>info@a-pallet.ru</span>
-						</div>
-						<div class="nav-contacts-item d-flex align-items-center">
-							<img src="img/phone.svg" alt="nav-item-img">
-							<span>+7 495 155 73 97</span>
-						</div>
-					</nav>
-				</nav>
-				<!-- /.nav-info -->
-				<nav class="nav-main">
-					<div class="nav-main-inner d-flex justify-content-between align-items-center">
-						<div class="nav-main-menu">
-							<a href="#" class="nav-main-item">О нас</a>
-							<a href="#" class="nav-main-item">Продукция</a>
-							<a href="#" class="nav-main-item">Преимущества</a>
-							<a href="#" class="nav-main-item">Контакты</a>
-						</div>
-						<a href="#" class="btn d-flex align-items-center">
-							<img src="img/callback.svg" alt="nav-item-img">
-							<span>Обратный звонок</span>
+			<div class="container-xxl">
+				<div class="row justify-content-between align-items-center py-3">
+					<div class="col-2">
+						<a href="#" class="logo">
+							<img src="img/logo.png" alt="logo">
 						</a>
+					</div>
+					<div class="col-10">
+						<div id="Contacts" class="row align-items-center justify-content-end">
+							<div class="col-12 col-md-6 col-xl-4 d-flex justify-content-end ">
+								<img src="img/nav.svg" alt="nav-item-img">
+								<span class="ms-2">ООО СТРОЙБРИГ ИНН: 7720484439</span>
+							</div>
+							<div class="col-12 col-md-6 col-xl-2 d-flex justify-content-end mt-md-0 mt-2">
+								<img src="img/time.svg" alt="nav-item-img">
+								<span class="ms-2">Пн-Вс с 9:00 до 20:00</span>
+							</div>
+							<div class="col-12 col-md-6 col-xl-2 d-flex justify-content-end mt-md-0 mt-2">
+								<img src="img/mail.svg" alt="nav-item-img">
+								<span class="ms-2">info@a-pallet.ru</span>
+							</div>
+							<div class="col-12 col-md-6 col-xl-4 d-flex justify-content-end large">
+								<img src="img/phone.svg" alt="nav-item-img">
+								<span class="ms-2">+7 495 155 73 97</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /.nav-info -->
+				<nav id="nav-main" class="navbar navbar-expand-lg sticky-top">
+					<div class="container-fluid">
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+							data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+							aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav me-auto mb-2 mb-lg-0 text-uppercase fw-bold">
+								<li class="nav-item">
+									<a class="nav-link" href="#">О нас</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Продукция</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link">Преимущества</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link">Контакты</a>
+								</li>
+							</ul>
+							<button id="Call-back" class="btn btn-outline-success me-2" type="button">
+								<img src="img/callback.svg" alt="nav-item-img">
+								<span>Обратный звонок</span>
+							</button>
+						</div>
 					</div>
 				</nav>
 				<!-- /.nav-main -->
@@ -330,6 +349,7 @@
 			<!-- /.inner -->
 		</main>
 		<!-- /#main -->
+		<script src="js/bootstrap.js"></script>
 	</body>
 
 </html>
