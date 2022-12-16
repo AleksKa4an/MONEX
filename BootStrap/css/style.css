@@ -18,11 +18,12 @@
 }
 
 #nav-main {
-	padding: 30px 0;
+	padding: 20px 0;
 	background-color: rgba(255, 197, 1, 1);
 }
 
 #nav-main a {
+	cursor: pointer;
 	padding: 0 20px;
 	color: #312c21;
 	font: 400 18px 'Roboto', sans-serif;
@@ -31,6 +32,93 @@
 
 #nav-main li:first-of-type>a {
     border-left: none;
+}
+
+#Call-back {
+	display: block;
+	border-radius: 0;
+	padding: 16px 40px;
+	font: 600 17px/1.48 'Roboto', sans-serif;
+	border: 0.7px solid rgba(49, 44, 33, 1);
+	cursor: pointer;
+	color: rgba(49, 44, 33, 1);
+}
+
+#Call-back:hover {
+	background-color: transparent;
+}
+
+#main-intro {
+	width: 100%;
+	height: 40rem;
+	background-color: rgba(49, 44, 33, 1);
+	background-image: url('../img/headerbgd.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 0;
+}
+
+.carousel {
+	top: 150px;
+}
+
+.carousel-inner {
+	width: 75%;
+	height: 70%;
+}
+
+.carousel-indicators {
+    bottom: -70px;
+}
+
+.intro-title {
+	max-width: 1015px;
+	font-size: 52px;
+	font-weight: 500;
+	font-family: 'Oswald', sans-serif;
+	color: #fff;
+}
+
+.intro-text {
+	display: block;
+	width: 50%;
+	font-size: 30px;
+	font-weight: 500;
+	font-family: 'Oswald', sans-serif;
+	color: #fff;
+}
+
+.carousel-indicators [data-bs-target]  {
+	margin: 0 10px;
+	width: 25px;
+	height: 20px;
+	border-radius: 50%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 5rem;
+  height: 5rem;
+}
+
+.carousel-item {
+	padding: 1rem;
+	background-color: rgba(49, 44, 33, 0.5);
+}
+
+.carousel-item .btn {
+	display: inline-block;
+	background-color: #ffc501;
+	padding: 25px 90px;
+	margin-top: 25px;
+	font: 600 17px/1.48 'Roboto', sans-serif;
+	border: 0.7px solid transparent;
+	cursor: pointer;
+	color: rgba(49, 44, 33, 1);
+	font-size: 30px;
+	font-weight: 600;
+	color: #312c21;
 }
 
 .container-xxl {
